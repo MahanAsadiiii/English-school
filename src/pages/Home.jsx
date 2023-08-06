@@ -1,11 +1,12 @@
 import React from 'react'
 import { IntroBgImg } from '../utilities/Images.jsx'
-import { Layout ,Intro } from '../components'
+import { Layout, Intro, HowItWorks } from '../components'
 
 function Home() {
     return (
         <Layout>
-        <Intro/>
+            <Intro />
+            <HowItWorks />
         </Layout>
     )
 }
