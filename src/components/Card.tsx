@@ -23,6 +23,7 @@ type card = {
 let Card = (prop: card) => {
 
     let nameColorVar
+    let contentColor
 
     if (prop.item.nameColor === 'black' || prop.item.priceColor === 'black') {
         nameColorVar = 'text-black'
@@ -32,6 +33,13 @@ let Card = (prop: card) => {
         nameColorVar = 'text-white'
     }
 
+    if (prop.item.btnContentColor === 'gray') {
+        contentColor = 'text-[var(--gray-2)]'
+    } else if (prop.item.btnContentColor === 'white') {
+        contentColor = 'text-white'
+    } else if (prop.item.btnContentColor === 'violet') {
+        contentColor = 'text-[var(--primary)]'
+    }
 
     return (
 
@@ -46,7 +54,7 @@ let Card = (prop: card) => {
                 <span className={`mt-2 text-xl ${prop.item.periodColor === 'gray' ? 'text-[var(--gray-2)]' : 'text-white'}`}>{prop.item.period}</span>
             </div>
             <button className={`px-16 py-4 rounded-2xl mt-8  ${prop.item.btnBorder === true && 'border-2 border-[var(--light-gray)]'} ${prop.item.btnColor === 'violet' ? 'bg-[var(--primary)]' : 'bg-white'} `}>
-                <a href="">{prop.item.btnContent}</a>
+                <a href="" className={`text-xl ${contentColor}`}>{prop.item.btnContent}</a>
             </button>
 
             <div className="mt-4">

@@ -1,14 +1,14 @@
 // import React from 'react'
-import { Layout, Intro, HowItWorks, AboutUsSec, PackageSec, DownloadSec } from '../components'
+import { Layout, Intro, HowItWorks, AboutUsSec, PackageSec, DownloadSec, Advertisement } from '../components'
 
-
-function Home() {
+const Home = () => {
     return (
         <Layout>
             <Intro />
             <HowItWorks />
             <AboutUsSec/>
             <PackageSec/>
+            <Advertisement/>
             <DownloadSec/>
         </Layout>
     )

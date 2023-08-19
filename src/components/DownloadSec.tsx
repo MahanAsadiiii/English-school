@@ -4,8 +4,8 @@ import { downloadSecBg, downloadSecImage, appStore, googlePlay } from '../utilit
 const DownloadSec = () => {
     return (
         <div className='flex relative mt-32'>
-            <img src={downloadSecBg} alt="" className='absolute bottom-0 left-0 -z-20' />
-            <div className='flex relative '>
+            <img src={downloadSecBg} alt="" className='absolute w-full bottom-0 left-0 -z-20' />
+            <div className='flex justify-between '>
                 <div className="basis-1/2 mt-36">
                     <div className="text-[var(--headers-color)] text-6xl font-medium">Download Learn App</div>
                     <div className="text-[var(--gray-2)] text-xl mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</div>
